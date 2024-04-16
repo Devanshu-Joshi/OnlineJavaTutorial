@@ -1,0 +1,186 @@
+.allContainer {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.allContainer::-webkit-scrollbar {
+    width: 1.5rem;
+    /* Adjust the width as needed */
+}
+
+.allContainer::-webkit-scrollbar-track {
+    background-color: #000000;
+    width: 2rem;
+    /* Background color of the scrollbar track */
+}
+
+.allContainer::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    /* Color of the scrollbar thumb */
+    /* Rounded corners of the scrollbar thumb */
+}
+
+.allContainer::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Color of the scrollbar thumb on hover */
+}
+
+.Main {
+    display: flex;
+    align-items: center;
+    grid-template-columns: 500px;
+    color: yellow;
+    font-size: 25px;
+    height: 70%;
+    /* border: 2px solid red; */
+}
+
+.Main__Wrapper {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.Main a {
+    border: 2px solid white;
+    font-weight: bolder;
+    text-decoration: none;
+    color: yellow;
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+    transition: 0.8s;
+}
+
+.Main a:hover {
+    background-color: orange;
+    color: black;
+}
+
+.contactSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins" !important;
+    /* border: 2px solid red; */
+}
+
+.contactSection__Container__Head {
+    font-size: var(--size-2xl);
+    font-weight: 900;
+}
+
+.contactSection__Container {
+    margin-top: 35%;
+    margin-bottom: 10%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    min-width: 460px;
+    max-width: 560px;
+}
+
+.contactSection__Container__Content {
+    min-width: 90%;
+    max-width: 90%;
+    font-size: var(--size-base);
+    font-family: "Poppins" !important;
+    border-radius: 20px;
+    padding: 0.250rem 1rem;
+}
+
+.contactLink
+{
+    cursor: pointer;
+}
+
+.messageBox
+{
+    min-height: 5rem;
+}
+
+.contactSection__Container > button
+{
+    cursor : pointer;
+    min-width: 90%;
+    max-width : 90%;
+    height: 2rem;
+    padding: 0 16px;
+    border-radius: 1.25rem;
+    background: #216ce7;
+    color: #f9f9f9;
+    border: 0;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.375s;
+}
+
+.contactSection__Container > button:hover
+{
+    background: #10449A;
+}
+
+.homeFooter
+{
+    background-color: rgba(26, 26, 26, 0.5);
+}
+
+.homeFooter__div
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    color: whitesmoke;
+    font-size: var(--size-sm);
+    font-weight: 600;
+}
+
+.homeFooter__div__logo
+{
+    font-size: var(--size-base);
+}
+
+.homeFooter__div p
+{
+    padding: 0;
+    margin: 0;
+}
+
+.homeFooter__div__link
+{
+    display: inline;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+    .contactSection__Container {
+        margin-top: 25%;
+    }
+}
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

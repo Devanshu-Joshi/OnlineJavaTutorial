@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Demo</title>
+</head>
+<body>
+    <button data-open-modal>Open</button>
+    <dialog data-modal>
+        <form>
+            <input type="text" class="txt"/>
+            <input type="submit" value="cancel" formmethod="dialog"/>
+            <input type="button" class="btnclose" value="discard"/>
+            <input type="submit"/>
+        </form>
+    </dialog>
+</body>
+<script>
+    const openButton = document.querySelector("[data-open-modal]")
+    const discardButton = document.querySelector(".btnclose");
+    const modal = document.querySelector("[data-modal]")
+    const txt = document.querySelector(".txt");
+
+    openButton.addEventListener("click",() =>{
+        modal.showModal()
+    })
+
+    discardButton.addEventListener("click",()=>{
+        modal.close()
+        txt.value = ""
+    })
+
+    modal.addEventListener("click", e=>{
+        const dialogDimension = modal.getBoundingClientRect()
+
+        if(
+            e.clientX < dialogDimension.left ||
+            e.clientX > dialogDimension.right ||
+            e.clientY < dialogDimension.top ||
+            e.clientY > dialogDimension.bottom
+        )
+        {
+            modal.close()
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/SignUp.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/utils.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Sign-Up</title>
+</head>
+
+<body>
+    <script src="../js/script.js"></script>
+    <!-- Navigation Bar -->
+    <div class="responsive">
+        <a class="logo" href="../../">Java Tutorial</a>
+        <nav class="nav">
+            <table class="Table">
+                <tr>
+                    <ul>
+                        <li class="navigation"><a href="../../">Home</a></li>
+                        <li class="navigation"><a href="../php/01_History.php">Chapters</a></li>
+                        <li class="navigation"><a href="../php/Quiz.php">Quiz</a></li>
+                        <li class="navigation"><a href="">About-Us</a></li>
+                    </ul>
+                </tr>
+            </table>
+            <!-- Dialog/Sidebar -->
+            <div data-open-modal class="sidebar">
+                <div class="menuToggle"></div>
+            </div>
+            <dialog data-modal>
+                <div class="modalContainer">
+                    <a class="modalContainer__links" href="../../">Home</a>
+                    <a class="modalContainer__links" href="../php/01_History.php">Chapters</a>
+                    <a class="modalContainer__links" href="../php/Quiz.php">Quiz</a>
+                    <a class="modalContainer__links" href="">About-Us</a>
+                </div>
+            </dialog>
+        </nav>
+        <div class="signContainer">
+            <div class="card">
+                <div class="logoSign">
+                    <i class='bx bxl-java'></i>
+                </div>
+                <h2>Create Account</h2>
+                <form name="myform" class="form" action="../php/SignUp.php" method="post" onsubmit="return validate();">
+                    <input type="text" name="txtunm" placeholder="Name" required>
+                    <input type="email" name="txteid" placeholder="Email" required>
+                    <input type="number" name="txtnum" placeholder="Number" required>
+                    <input type="password" name="txtpwd" placeholder="Password" required>
+                    <button data-open-sup type="button">Sign Up</button>
+                </form>
+                <footer>
+                    Existing users, sign in
+                    <a href="../php/login.php">Here</a>
+                </footer>
+                <!-- SUP -->
+                <dialog data-sup>
+                    <div class="supContainer">
+                        <b>OTP Sent on Your Email-ID</b>
+                        <input type="number" name="otp">
+                        <button type="submit" name="submit">Verify Email</button>
+                    </div>
+                </dialog>
+            </div>
+        </div>
+</body>
+<script src="../js/dialog.js"></script>
+
+</html>

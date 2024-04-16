@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+.profileContainer
+{
+    display: grid;
+    place-items: center;
+    margin-top: 5%;
+}
+
+.container
+{
+    /* width: 100%;
+    height: 40%; */
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px 50px 25px 50px;
+    text-align: center;
+}
+
+h1
+{
+    margin-bottom: 20px;
+}
+
+form
+{
+    margin: 0;
+}
+
+.pic
+{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    /* margin-top: 10px; */
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+#imgdisplay
+{
+    height: 130px;
+    width: 130px;
+    border: 2px solid black;
+    border-radius: 500px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+#imgdisplay:hover
+{
+    opacity: 50%;
+}
+
+#profileimg
+{
+    display: none;
+}
+
+.content
+{
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 16px;
+}
+
+.textLabel
+{
+    border: none;
+    cursor: default;
+    background-color: transparent;
+    text-align: center;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: var(--size-base);
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.content__edit
+{
+    cursor: pointer;
+    transition: color 0.5s;
+    padding: 0 0.5rem;
+}
+
+.content__edit:hover
+{
+    outline: 2px solid blue;
+    color: blue;
+}
+
+#file
+{
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.upload
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logout
+{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.logout > button
+{
+    cursor : pointer;
+    width : 60%;
+    height: 10%;
+    padding: 0 16px;
+    margin-top: 25px;
+    border-radius: 1.25rem;
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid red;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.375s;
+}
+
+.logout > button:hover
+{
+    background: #ff0000;
+    color: #ffffff;
+}
+
+@keyframes rotate {
+    100% {
+        background-position: 15% 50%;
+    }
+}

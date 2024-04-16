@@ -1,0 +1,84 @@
+.Heading
+{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    text-decoration-line: underline;
+}
+
+.Controls
+{
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.req
+{
+    color: red;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+#txtdob
+{
+    width: 100%;
+}
+
+.User
+{
+    margin: auto;
+    padding-top: 15px;
+}
+
+.Main
+{
+    width: 120px;
+    font-size: 15px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+.submitc
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#btnSubmit
+{
+    height: 30px;
+    width: 75px;
+    background-color: greenyellow;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#btnSubmit:hover
+{
+    background-color: rgb(128, 210, 5);
+}
+
+input
+{
+    border: 1.6px solid rgb(147, 147, 147);
+    border-radius: 10px;
+}
+
+input:hover
+{
+    transition: all 0.375s;
+    border: 1.7px solid black;
+}
+
+td > p , div > p
+{
+    cursor: default;
+}
+
+#txtdob
+{
+    cursor: pointer;
+}
